@@ -18,7 +18,7 @@ Brief: Στόχος μας είναι ο σχεδιασμός ενός εκπα�
 Ορίσαμε τις δραστηριότητες (τι κάνουν οι χρήστες πριν από το έργο μας)
 Περιγράψαμε το πλαίσιο (Ποιες είναι οι συμφραζόμενες πληροφορίες που έχουμε πριν από την παρέμβαση)
 Ελέγξαμε τις απαραίτητες τεχνολογίες (εντοπίσαμε και αναλύσαμε παρόμοια έργα, συλλέξαμε τεχνολογίες που σκοπεύουμε να χρησιμοποιήσουμε: πλατφόρμα/Arduino κ.λπ., αισθητήρες)
-https://docs.google.com/presentation/d/1xzMXghfQ3YquVylC5MOQfpvutnrbKSo3sm56PuFewEE/edit?usp=sharing
+https://docs.google.com/document/d/1tYvkZgNvnS9D6r9ZUQcqw21kCfw4zlAEVClLKZFHPgo/edit?usp=sharing
 
 
 # 2nd Deliverable

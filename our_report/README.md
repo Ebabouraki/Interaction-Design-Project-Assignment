@@ -20,9 +20,9 @@ Brief: Στόχος μας είναι ο σχεδιασμός ενός εκπα�
 Ελέγξαμε τις απαραίτητες τεχνολογίες (εντοπίσαμε και αναλύσαμε παρόμοια έργα, συλλέξαμε τεχνολογίες που σκοπεύουμε να χρησιμοποιήσουμε: πλατφόρμα/Arduino κ.λπ., αισθητήρες)
 https://docs.google.com/document/d/1tYvkZgNvnS9D6r9ZUQcqw21kCfw4zlAEVClLKZFHPgo/edit?usp=sharing
 
+PACT
 
-              PACT
-                        PEOPLE
+PEOPLE
 Ομάδες χρηστών
   Παιδιά
 Δημογραφικά στοιχεία
@@ -37,9 +37,6 @@ https://docs.google.com/document/d/1tYvkZgNvnS9D6r9ZUQcqw21kCfw4zlAEVClLKZFHPgo/
 Μη συνειδητοποιημένα
 Αρχίζουν οι ευθύνες και οι υποχρεώσεις
                
-
-
-
 
 
 ACTIVITY
@@ -73,8 +70,6 @@ What are the contextual information we have before the intervention
 Ενθάρρυνση για τη διεξαγωγή της δραστηριότητας
 Πιο ευχάριστη και διασκεδαστική τη διαδικασία
 Ελκυστικό προς τα παιδιά
-
-
 
 
 TECHNOLOGY

@@ -1,8 +1,8 @@
 # Lesson: Interaction Design
 
-### First and Last Name: xxx (all members of the team)
-### University Registration Number: dpsdxxxxx (all members of the team)
-### GitHub Personal Profile: xxx
+### First and Last Name: Ελένη Βαβουράκη, Μαρίνα-Ελένη Αναστασιάδου, Παρασκευή Βερνέζου
+### University Registration Number: dpsd19009, dpsd19005, dpsd19011
+### GitHub Personal Profile: https://github.com/Ebabouraki, https://github.com/Marina-Eleni-Anastasiadou, https://github.com/DPSD19011
 
 # Introduction
 

@@ -238,7 +238,7 @@ Collect technologies that you plan to use
 
 ### Interface design
 ```mermaid
-  graph TD;
+  graph LR;
        Διεπαφή_δραστηριότητας --> οπτική_επαφή;
         Διεπαφή_δραστηριότητας --> ακουστική_επαφή;
          Διεπαφή_δραστηριότητας --> αφή;

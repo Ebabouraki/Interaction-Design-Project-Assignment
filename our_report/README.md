@@ -138,7 +138,8 @@ TECHNOLOGY
 
 Analyze similar projects
 
- No-Touch Hand Washing Timer w CPX MakeCode https://youtu.be/M8Fh9-bwPKc 
+ No-Touch Hand Washing Timer w CPX MakeCode 
+ [Resource link]https://youtu.be/M8Fh9-bwPKc)
 
 Input: Χρησιμοποιήστε έναν δυνατό ήχο, όπως ένα παλαμάκι ή ένα χτύπημα για να ενεργοποιήσετε το χρονόμετρο CPX 
 Output: Αλληλεπίδραση του συστήματος μέσω φωτεινών ενδείξεων για το επίπεδο διαρκειας του χρόνου
@@ -146,14 +147,17 @@ Content: Circuit Playground Express, Αισθητήρα εγγύτητας γι�
 Communication: Οπτική (αλληλεπίδραση με το σύστημα) 
 Το σύστημα μέσω του αισθητήρα εγγύτητας αντιλαμβάνεται το κύμα ήχου για την ενεργοποίηση του
 
-CLUE No-Touch Hand Wash Timer w CircuitPython https://youtu.be/_Ui1HS6LiPA 
+CLUE No-Touch Hand Wash Timer w CircuitPython 
+[Resource link]https://youtu.be/_Ui1HS6LiPA)
+
 
 Input: Χρησιμοποιήστε  το κούνημα ενός χεριού για να ξεκινήσετε το CLUE.
 Output: Αλληλεπίδραση του συστήματος μέσω οθόνης  για το επίπεδο διαρκειας του χρόνου καθώς και ηχητική ειδοποίηση
 Content: Adafruit CLUE - nRF52840 Express, Η έκδοση CLUE αυτού του έργου είναι λίγο πιο εξελιγμένη από την CPX, καθώς έχουμε οθόνη TFT για εργασία και αισθητήρα εγγύτητας για την ενεργοποίηση του συστήματος και για τη χρονομέτρηση της διαδικασίας και ηχείο για τη ηχητική ειδοποίηση.
 Communication: Οπτική και ακουστική (αλληλεπίδραση με το σύστημα) και μέσω του αισθητήρα εγγύτητας αντιλαμβάνεται τη συγκεκριμένη κίνηση του χεριού
 
-Timer in use https://youtu.be/ADCR4gymqrQ 
+Timer in use
+[Resource link]https://youtu.be/ADCR4gymqrQ)  
 
 Input: Αισθητήρας υπερήχων για την ενεργοποίηση του συστήματος με τη κινηση του χεριού από απόσταση
 Output: Αλληλεπίδραση του συστήματος μέσω οθόνης και καταγραφή των δευτερολέπτων (60 δευτερόλεπτα)).

@@ -197,12 +197,13 @@ Collect technologies that you plan to use
 
 
 # 2nd Deliverable
-```dot
-  graph G {
-      A -> B;
-      B -> C;
-      B -> D; 
-      }
+```mermaid
+  graph TD;
+      Προϊόν --> Ψηφιακό;
+      Προϊόν --> Αναλογικό;
+      A-->C;
+      B-->D;
+      C-->D;
 ```
 # 3rd Deliverable 
 

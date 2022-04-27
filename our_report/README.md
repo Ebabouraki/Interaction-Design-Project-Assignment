@@ -222,7 +222,7 @@ Collect technologies that you plan to use
        5_sec --> τρίψιμο_το_εσωτερικό_των_παλαμών_με_τα_ακροδάχτυλα;
 ```
 ```mermaid
-  graph TD;
+  graph LR;
       Χρονομέτρηση --> 60sec;
        60sec --> ανοιγμα_βρύσης_1sec;
        60sec --> Βρέξιμο_χεριών_5sec;

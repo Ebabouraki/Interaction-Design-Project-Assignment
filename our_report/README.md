@@ -198,6 +198,16 @@ Collect technologies that you plan to use
 
 # 2nd Deliverable
 ### Information Architecture
+
+``` mermaid
+graph TB
+A(Προϊόν) --> B[Ψηφιακό]
+A( Προϊόν) --> C[Αναλογικό]
+B(Ψηφιακό) --> D[Παιχνίδι]
+D(Παιχνίδι) --> E[Εκπάιδευτικό]
+E(Εκπάιδευτικό) --> F[Εκμάθηση διαδικασίας]
+```
+
 ```mermaid
   graph TD;
       Προϊόν --> Ψηφιακό;

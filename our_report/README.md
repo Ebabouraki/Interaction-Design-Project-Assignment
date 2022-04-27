@@ -199,7 +199,7 @@ Collect technologies that you plan to use
 # 2nd Deliverable
 ### Information Architecture
 ```mermaid
-  graph LR;
+  graph TD;
       Προϊόν --> Ψηφιακό;
       Προϊόν --> Αναλογικό;
       Ψηφιακό --> Παιχνίδι;
@@ -212,7 +212,7 @@ Collect technologies that you plan to use
       Ηλικιακή_ομάδα --> 5-12;
 ```
 ```mermaid
-  graph TD;
+  graph LR;
        Εκμάθηση_διαδικασίας -->5_sec;
        5_sec --> τρίψιμο_παλαμών;
        5_sec --> τρίψιμο_παλάμης_με_την_αντίθετη_ραχαία_επιφάνεια_του_χεριού;

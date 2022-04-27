@@ -198,7 +198,7 @@ Collect technologies that you plan to use
 
 # 2nd Deliverable
 ```dot
-  digraph G {
+  graph G {
       A -> B;
       B -> C;
       B -> D; 

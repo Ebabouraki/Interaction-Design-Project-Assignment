@@ -198,8 +198,8 @@ Collect technologies that you plan to use
 
 # 2nd Deliverable
 ### Information Architecture
-```dot
-  digraph;
+```mermaid
+  graph TD;
       Προϊόν --> Ψηφιακό;
       Προϊόν --> Αναλογικό;
       Ψηφιακό --> Παιχνίδι;

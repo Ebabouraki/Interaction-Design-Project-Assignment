@@ -197,14 +197,13 @@ Collect technologies that you plan to use
 
 
 # 2nd Deliverable
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+```dot
+  digraph G {
+      A -> B;
+      B -> C;
+      B -> D; 
+      }
 ```
-
 # 3rd Deliverable 
 
 

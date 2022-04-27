@@ -198,7 +198,7 @@ Collect technologies that you plan to use
 
 # 2nd Deliverable
 ### Information Architecture
-```mermaid
+```dot
   graph TD;
       Προϊόν --> Ψηφιακό;
       Προϊόν --> Αναλογικό;

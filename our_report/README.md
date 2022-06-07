@@ -564,6 +564,13 @@ D(Touchless) --> I[Ultrasonic sensor]
 
 </pre>
 
+***Video prototyping***
+<video width="320" height="240" controls>
+  <source src="wash_hands_timer_machine (1) (1).mp4" type="video/mp4">
+ 
+</video>
+***Φωτογραφια ***
+
 
 # Conclusions
 

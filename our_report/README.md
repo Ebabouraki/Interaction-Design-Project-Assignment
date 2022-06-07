@@ -284,6 +284,9 @@ D(Touchless) --> I[Ultrasonic sensor]
 <img src="Εικόνα2.jpg" width="1069" height="653" >
 <img src="Εικόνα3.jpg" width="609" height="652" >
 <img src="Εικόνα4.jpg" width="609" height="700" >
+<img src="Εικόνα5.jpg" width="1069" height="653" >
+<img src="Εικόνα6.jpg" width="1069" height="653" >
+<img src="Εικόνα7.jpg" width="1069" height="653" >
 
 # Conclusions
 

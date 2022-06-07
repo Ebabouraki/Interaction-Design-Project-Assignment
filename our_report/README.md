@@ -311,7 +311,7 @@ const int RED_PIN = 11;
 const int GREEN_PIN = 9;
 const int BLUE_PIN = 10;
 
-int DISPLAY_TIME = 100;
+int DISPLAY_TIME = 100;  
 const int buzzer = 7; //buzzer to arduino pin 7
 Servo servo_12;
 
@@ -406,9 +406,9 @@ Servo servo_12;
 #define NOTE_DS8 4978
 #define REST 0
 
-int tempo = 92;
+int tempo=92; 
 
-int melody[] = {
+int melody[] = {  
   NOTE_E5, 4,  NOTE_B4,8,  NOTE_C5,8,  NOTE_D5,4,  NOTE_C5,8,  NOTE_B4,8,
   NOTE_A4, 4,  NOTE_A4,8,  NOTE_C5,8,  NOTE_E5,4,  NOTE_D5,8,  NOTE_C5,8,
   NOTE_B4, -4,  NOTE_C5,8,  NOTE_D5,4,  NOTE_E5,4,
@@ -428,145 +428,200 @@ int melody[] = {
   NOTE_E5, -4,  NOTE_C5,8,  NOTE_E5,4,  NOTE_D5,8,  NOTE_C5,8,
   NOTE_B4, 4,  NOTE_B4,8,  NOTE_C5,8,  NOTE_D5,4,  NOTE_E5,4,
   NOTE_C5, 4,  NOTE_A4,4,  NOTE_A4,4, REST, 4,
-
+  
 
   NOTE_E5,2,  NOTE_C5,2,
   NOTE_D5,2,   NOTE_B4,2,
   NOTE_C5,2,   NOTE_A4,2,
-  NOTE_GS4,2,  NOTE_B4,4,  REST,8,
+  NOTE_GS4,2,  NOTE_B4,4,  REST,8, 
   NOTE_E5,2,   NOTE_C5,2,
   NOTE_D5,2,   NOTE_B4,2,
   NOTE_C5,4,   NOTE_E5,4,  NOTE_A5,2,
   NOTE_GS5,2,
 
 };
-int notes = sizeof(melody) / sizeof(melody[0]) / 2;
+int notes=sizeof(melody)/sizeof(melody[0])/2; 
 int wholenote = (60000 * 4) / tempo;
 int divider = 0, noteDuration = 0;
 long readUltrasonicDistance(int triggerPin, int echoPin)
 {
-    pinMode(triggerPin, OUTPUT);  // Clear the trigger
-    digitalWrite(triggerPin, LOW);
-    delayMicroseconds(2);
-    // Sets the trigger pin to HIGH state for 10 microseconds
-    digitalWrite(triggerPin, HIGH);
-    delayMicroseconds(10);
-    digitalWrite(triggerPin, LOW);
-    pinMode(echoPin, INPUT);
-    // Reads the echo pin, and returns the sound wave travel time in microseconds
-    return pulseIn(echoPin, HIGH);
+  pinMode(triggerPin, OUTPUT);  // Clear the trigger
+  digitalWrite(triggerPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigger pin to HIGH state for 10 microseconds
+  digitalWrite(triggerPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(triggerPin, LOW);
+  pinMode(echoPin, INPUT);
+  // Reads the echo pin, and returns the sound wave travel time in microseconds
+  return pulseIn(echoPin, HIGH);
 }
 
 void setup()
 {
-    servo_12.attach(12, 500, 2500);
+  servo_12.attach(12, 500, 2500);
     // pinMode(7, OUTPUT);
     pinMode(buzzer, OUTPUT);
-    pinMode(RED_PIN, OUTPUT);
-    pinMode(GREEN_PIN, OUTPUT);
-    pinMode(BLUE_PIN, OUTPUT);// Set buzzer - pin 7 as an output
+  pinMode(RED_PIN, OUTPUT);
+  pinMode(GREEN_PIN, OUTPUT);
+  pinMode(BLUE_PIN, OUTPUT);// Set buzzer - pin 7 as an output
     Serial.begin(115200);
 }
 
 void loop()
 {
+  servo_12.write(0);
+  if  (0.01723 * readUltrasonicDistance(2,3)< 20) {
+
+      
+  
+    for (i = 1; i < 180; i += 1) {
+      if( i == 30 )
+      {
+        digitalWrite(RED_PIN, HIGH);
+  digitalWrite(GREEN_PIN, LOW);
+  digitalWrite(BLUE_PIN, LOW);
+
+ 
+      }
+       if( i == 45 )
+      {
+   digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN, HIGH);
+  digitalWrite(BLUE_PIN, LOW);
+
+
+      }
+          if( i == 60 )
+      {
+   digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN, LOW);
+  digitalWrite(BLUE_PIN, HIGH);
+
+
+      }
+            if( i == 75 )
+      {
+   digitalWrite(RED_PIN, HIGH);
+  digitalWrite(GREEN_PIN, HIGH);
+  digitalWrite(BLUE_PIN, LOW);
+
+      }
+               if( i == 90 )
+      {
+   digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN, HIGH);
+  digitalWrite(BLUE_PIN, HIGH);
+
+
+      }
+       if( i == 105 )
+      {
+   digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN, LOW);
+  digitalWrite(BLUE_PIN, LOW);
+
+
+      }
+       if( i == 170 )
+      {
+   digitalWrite(RED_PIN, HIGH);
+  digitalWrite(GREEN_PIN, LOW);
+  digitalWrite(BLUE_PIN, LOW);
+        
+
+      }
+       if( i == 172 )
+      {
+   digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN, LOW);
+  digitalWrite(BLUE_PIN, LOW);
+    
+   
+      }
+       if( i == 174 )
+      {
+   digitalWrite(RED_PIN, HIGH);
+  digitalWrite(GREEN_PIN, LOW);
+  digitalWrite(BLUE_PIN, LOW);
+        
+
+      }
+      if( i == 176 )
+      {
+   digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN, LOW);
+  digitalWrite(BLUE_PIN, LOW);
+       
+   
+      }
+       if( i == 178 )
+      {
+   digitalWrite(RED_PIN, HIGH);
+  digitalWrite(GREEN_PIN, LOW);
+  digitalWrite(BLUE_PIN, LOW);
+        
+
+      }
+         if( i == 179 )
+      {
+   digitalWrite(RED_PIN, LOW);
+  digitalWrite(GREEN_PIN, LOW);
+  digitalWrite(BLUE_PIN, LOW);
+           
+   
+      }
+         
+ 
+      servo_12.write(i);
+      delay(45); // Wait for 335 millisecond(s)
+// calculates the duration of each note
+             
+    divider = melody[i + 1];
+    if (divider > 0) {
+      // regular note, just proceed
+      noteDuration = (wholenote) / divider;
+    } else if (divider < 0) {
+      // dotted notes are represented with negative durations!!
+      noteDuration = (wholenote) / abs(divider);
+      noteDuration *= 1.5; // increases the duration in half for dotted notes
+    }
+    // we only play the note for 90% of the duration, leaving 10% as a pause
+    tone(buzzer, melody[i], noteDuration*0.9);
+
+    // Wait for the specief duration before playing the next note.
+    delay(noteDuration);
+    
+    // stop the waveform generation before the next note.
+    noTone(buzzer);
+      
+            
+    }
+    
+  } else {
     servo_12.write(0);
-    if (0.01723 * readUltrasonicDistance(2, 3) < 20)
-    {
-
-
-
-        for (i = 1; i < 180; i += 1)
-        {
-            if (i == 30)
-            {
-                digitalWrite(RED_PIN, HIGH);
-                digitalWrite(GREEN_PIN, LOW);
-                digitalWrite(BLUE_PIN, LOW);
-
-
-            }
-            if (i == 45)
-            {
-                digitalWrite(RED_PIN, LOW);
-                digitalWrite(GREEN_PIN, LOW);
-                digitalWrite(BLUE_PIN, HIGH);
-
-
-
-            }
-            if (i == 60)
-            {
-                digitalWrite(RED_PIN, LOW);
-                digitalWrite(GREEN_PIN, HIGH);
-                digitalWrite(BLUE_PIN, LOW);
-
-
-            }
-            if (i == 75)
-            {
-                digitalWrite(RED_PIN, HIGH);
-                digitalWrite(GREEN_PIN, LOW);
-                digitalWrite(BLUE_PIN, HIGH);
-
-            }
-            if (i == 90)
-            {
-                digitalWrite(RED_PIN, LOW);
-                digitalWrite(GREEN_PIN, HIGH);
-                digitalWrite(BLUE_PIN, HIGH);
-
-
-            }
-            if (i == 105)
-            {
-                digitalWrite(RED_PIN, LOW);
-                digitalWrite(GREEN_PIN, LOW);
-                digitalWrite(BLUE_PIN, LOW);
-
-
-            }
-
-            servo_12.write(i);
-            delay(45); // Wait for 335 millisecond(s)
-                       // calculates the duration of each note
-
-            divider = melody[i + 1];
-            if (divider > 0)
-            {
-                // regular note, just proceed
-                noteDuration = (wholenote) / divider;
-            }
-            else if (divider < 0)
-            {
-                // dotted notes are represented with negative durations!!
-                noteDuration = (wholenote) / abs(divider);
-                noteDuration *= 1.5; // increases the duration in half for dotted notes
-            }
-            // we only play the note for 90% of the duration, leaving 10% as a pause
-            tone(buzzer, melody[i], noteDuration * 0.9);
-
-            // Wait for the specief duration before playing the next note.
-            delay(noteDuration);
-
-            // stop the waveform generation before the next note.
-            noTone(buzzer);
-
-
-        }
-
-    }
-    else
-    {
-        servo_12.write(0);
-
-    }
+       
+  }
+   digitalWrite(7, HIGH);
+  delay(1000);
+  digitalWrite(7, LOW);
+  delay(1000);
+   digitalWrite(7, HIGH);
+  delay(1000);
+  digitalWrite(7, LOW);
+  delay(1000);
+   digitalWrite(7, HIGH);
+  delay(1000);
+  digitalWrite(7, LOW);
+  delay(1000);
     Serial.print("Distance : ");
     Serial.print(0.01723 * readUltrasonicDistance(3, 3));
     Serial.println();
 
 
 }
+
+
 # Conclusions
 
 

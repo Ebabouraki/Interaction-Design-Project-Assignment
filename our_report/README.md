@@ -578,5 +578,24 @@ https://user-images.githubusercontent.com/100956280/172476418-c25775c4-3d56-4d39
 
 # Conclusions
 
+Η διαδικασία υλοποίησης της παραπάνω ομαδικής εργασίας πραγματοποιήθηκε έπειτα από πολύωρη προσπάθεια και μετά από πολλές δοκιμές ετσι ώστε να καταλήξουμε στο τελικό μας πρωτότυπο.
 
 # Sources
+Buzzer:
+
+[Resource link](https://github.com/lukecyca/TetrisThemeArduino)
+
+Servo motor:
+
+[Resource link](https://docs.arduino.cc/learn/electronics/servo-motors)
+
+Ultrasonic sensor:
+
+[Resource link](https://arduinogetstarted.com/tutorials/arduino-ultrasonic-sensor)
+
+Rgb led:
+
+[Resource link](https://www.tinkercad.com/things/aiwiFamJsSY-glorious-blorr/editel)
+
+
+
